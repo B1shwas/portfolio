@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Heebo } from "next/font/google";
 import "./globals.css";
+import NavbarSection from "@/components/NavbarSection";
+import FooterSection from "@/components/FooterSection";
 
-const inter = Inter({ subsets: ["latin"] });
+// Create a Heebo font instance
+const heebo = Heebo({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Bishwash Deoju",
@@ -16,7 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${heebo.className}  flex flex-col min-h-screen`}>
+        {/* Header */}
+        <NavbarSection />
+        {/* Main Content */}
+        <div className="flex-grow">{children}</div>
+        {/* Footer */}
+        <FooterSection />
+      </body>
     </html>
   );
 }

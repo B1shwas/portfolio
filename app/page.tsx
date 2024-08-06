@@ -1,5 +1,11 @@
+import IntroductionSection from "@/components/IntroductionSection";
 
+const Home = () => {
+  return (
+    <main>
+      <IntroductionSection />
+    </main>
+  );
+};
 
-export default function Home() {
-  return <h1 className="font-extrabold text-[50px] text-red-600">Hey</h1>;
-}
+export default Home;
