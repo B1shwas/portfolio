@@ -10,14 +10,14 @@ const SkillsSection = () => {
           return (
             <div
               className="flex flex-col md:flex-row  justify-between mt-3 md:mt-7 gap-10 border-b-[1px] md:py-5"
-              key={Date.now()}
+              key={item.major}
             >
               <h1 className="text-h5">{item.major}</h1>
               <div className="flex flex-wrap flex-grow justify-center md:justify-end gap-4">
                 {item.skills.map((item: Skill) => (
                   <div
                     className="flex flex-col w-[25%] items-center gap-2 mb-4"
-                    key={Date.now()}
+                    key={item.label}
                   >
                     {item.icon}
                     <p>{item.label}</p>

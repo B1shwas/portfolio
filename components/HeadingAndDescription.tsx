@@ -21,7 +21,7 @@ const HeadingAndDescription: React.FC<HeadingAndDescriptionProps> = ({
         {role}
       </h1>
       {children}
-      <p className={`${descriptionStyle} text-center md:text-start text-5xs`}>
+      <p className={`text-center md:text-start text-5xs ${descriptionStyle}`}>
         {description}
       </p>
     </div>

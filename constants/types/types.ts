@@ -24,15 +24,20 @@ export interface PostDetail {
 }
 
 export interface RecentPost {
+  id: number;
   header: string;
   description: string;
   details: PostDetail;
 }
 export interface FeaturedWork {
+  id: number;
   imgUrl: string;
   header: string;
   description: string;
   details: PostDetail;
+  description2?: string;
+  imgUrl2?: string;
+  href?: string;
 }
 
 export interface TitleProps {
@@ -47,4 +52,9 @@ export interface Skill {
 export interface SkillCategory {
   major: string;
   skills: Skill[];
+}
+
+export interface RecentPostCardProps {
+  count: number;
+  mainStyle?: string;
 }
