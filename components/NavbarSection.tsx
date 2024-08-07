@@ -4,14 +4,15 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
+import { NavLink } from "@/constants/types/types";
 
-const NavbarSection = () => {
+const NavbarSection: React.FC = () => {
   const currentPath = usePathname();
 
   return (
     <nav className="px-[30px] py-[24px] md:px-[60px]">
       <div className="hidden gap-9 justify-end md:flex">
-        {navLinks.map((item) => (
+        {navLinks.map((item: NavLink) => (
           <div
             key={item.label}
             className={cn("text-7xs hover:text-buttonColor", {

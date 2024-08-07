@@ -11,8 +11,9 @@ import Link from "next/link";
 
 import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { NavLink } from "@/constants/types/types";
 
-const MobileNav = () => {
+const MobileNav: React.FC = () => {
   const currentPath = usePathname();
   return (
     <Sheet>
@@ -22,7 +23,7 @@ const MobileNav = () => {
       <SheetContent className="w-[300px] flex justify-center items-center ">
         <SheetDescription>
           <div className="flex flex-col gap-7">
-            {navLinks.map((item) => (
+            {navLinks.map((item: NavLink) => (
               <div
                 key={item.label}
                 className={cn("text-7xs font-medium hover:text-buttonColor", {
