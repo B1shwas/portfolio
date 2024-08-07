@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
 import { NavLink } from "@/constants/types/types";
+import { handleContactClick } from "@/utils/malitoMail";
 
 const NavbarSection: React.FC = () => {
   const currentPath = usePathname();
@@ -21,7 +22,10 @@ const NavbarSection: React.FC = () => {
             })}
           >
             {item.label.toLowerCase().startsWith("contact") ? (
-              <button className="text-black hover:text-buttonColor">
+              <button
+                className="text-black hover:text-buttonColor"
+                onClick={handleContactClick}
+              >
                 Contact
               </button>
             ) : (

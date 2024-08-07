@@ -12,6 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "@/utils/Icons";
 import { NavLink } from "@/constants/types/types";
+import { handleContactClick } from "@/utils/malitoMail";
 
 const MobileNav: React.FC = () => {
   const currentPath = usePathname();
@@ -32,7 +33,10 @@ const MobileNav: React.FC = () => {
                 })}
               >
                 {item.label.toLowerCase().startsWith("contact") ? (
-                  <button className="text-primaryText hover:text-buttonColor">
+                  <button
+                    className="text-primaryText hover:text-buttonColor"
+                    onClick={handleContactClick}
+                  >
                     Contact
                   </button>
                 ) : (
