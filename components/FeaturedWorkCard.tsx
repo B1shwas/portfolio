@@ -9,11 +9,8 @@ const FeaturedWorkCard: React.FC<RecentPostCardProps> = ({ count }) => {
     <>
       {featuredWorks.slice(0, count).map((item: FeaturedWork) => {
         return (
-          <Link href={`/works/${item.id}`}>
-            <div
-              className="p-4 border-b-[1px] w-full cursor-pointer"
-              key={item.id}
-            >
+          <Link href={`/works/${item.id}`} key={item.id}>
+            <div className="p-4 border-b-[1px] w-full cursor-pointer">
               <div className="flex flex-col md:flex-row gap-5">
                 <Image
                   src={item.imgUrl}
