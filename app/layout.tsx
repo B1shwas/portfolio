@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Heebo, Lato } from "next/font/google";
+import { Heebo } from "next/font/google";
 import "./globals.css";
 import NavbarSection from "@/components/NavbarSection";
 import FooterSection from "@/components/FooterSection";
 
 // Create a Heebo font instance
-const heebo = Lato({
+const heebo = Heebo({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "300", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {

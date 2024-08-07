@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 import { usePathname } from "next/navigation";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu } from "@/utils/Icons";
 import { NavLink } from "@/constants/types/types";
 
 const MobileNav: React.FC = () => {

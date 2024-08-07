@@ -2,7 +2,7 @@ import { socialIcons } from "@/constants/socialIcons";
 
 const FooterSection: React.FC = () => {
   return (
-    <footer className="p-4">
+    <footer className="p-4 py-10">
       <div className="flex gap-5 justify-center">
         {socialIcons.map((item) => (
           <a href={item.href} key={item.href} target="blank">
