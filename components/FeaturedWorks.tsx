@@ -10,7 +10,7 @@ const FeaturedWorks: React.FC = () => {
       <Title href="/works" title="Featured works" />
       {featuredWorks.slice(0, 3).map((item: FeaturedWork) => {
         return (
-          <div className="p-4 border-b-[1px] w-full">
+          <div className="p-4 border-b-[1px] w-full" key={Date.now()}>
             <div className="flex flex-col md:flex-row gap-5">
               <Image
                 src={item.imgUrl}
