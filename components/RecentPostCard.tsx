@@ -20,7 +20,7 @@ const RecentPostCard: React.FC<RecentPostCardProps> = ({
           <HeadingAndDescription
             header={item.header}
             description={item.description}
-            headerStyle="!text-h6 !md:text-h4 hover:underline "
+            headerStyle="!text-h6 !md:text-h4 !text-left"
             mainStyle="!gap-2 !md:gap-3 !items-start"
             descriptionStyle="text-start"
           >

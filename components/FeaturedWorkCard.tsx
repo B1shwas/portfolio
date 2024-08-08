@@ -27,7 +27,7 @@ const FeaturedWorkCard: React.FC<RecentPostCardProps> = ({ count }) => {
                   descriptionStyle="text-start"
                 >
                   <div className="flex gap-4">
-                    <span className="bg-primaryText rounded-3xl text-white px-4">
+                    <span className="bg-primaryText rounded-3xl text-white px-1 md:px-4 h-fit">
                       {item.details.date.split("-")[0]}
                     </span>
                     <p className="text-lightText">{item.details.about}</p>

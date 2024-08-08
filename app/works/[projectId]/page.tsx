@@ -21,7 +21,7 @@ const ProjectPage = () => {
       <div className="md:px-[120px] py-[28px] flex flex-col items-center md:items-start gap-6 px-5">
         <h1 className="text-h3 md:text-h2 font-bold">{item.header}</h1>
         <div className="flex gap-4">
-          <span className="bg-primaryText rounded-3xl text-white px-1 md:px-4">
+          <span className="bg-primaryText rounded-3xl text-white px-1 md:px-4 h-fit">
             {item.details.date.split("-")[0]}
           </span>
           <p className="text-lightText">{item.details.about}</p>
