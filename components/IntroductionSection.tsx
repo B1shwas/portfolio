@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../public/brian.jpeg";
+import image from "@/public/profile.jpg";
 import Image from "next/image";
 import HeadingAndDescription from "./HeadingAndDescription";
 
