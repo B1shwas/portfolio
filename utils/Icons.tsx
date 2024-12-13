@@ -17,8 +17,14 @@ import { IoLogoNpm } from "react-icons/io";
 import { FaSass } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { SiShadcnui } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiPrisma } from "react-icons/si";
 
 export {
+  SiPrisma,
+  SiNestjs,
+  BiLogoPostgresql,
   FaFacebookSquare,
   FaInstagram,
   FaXTwitter,

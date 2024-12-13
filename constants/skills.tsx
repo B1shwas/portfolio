@@ -14,6 +14,9 @@ import {
   TiHtml5,
   RiTailwindCssFill,
   GrMysql,
+  SiPrisma,
+  BiLogoPostgresql,
+  SiNestjs,
 } from "@/utils/Icons";
 import { SkillCategory } from "./types/types";
 
@@ -39,6 +42,9 @@ export const skills: SkillCategory[] = [
       { icon: <SiExpress size={50} />, label: "Express.js" },
       { icon: <SiMongodb size={50} />, label: "MongoDB" },
       { icon: <GrMysql size={50} />, label: "MySQL" },
+      { icon: <SiPrisma size={50} />, label: "Prisma" },
+      { icon: <BiLogoPostgresql size={50} />, label: "Postgresql" },
+      { icon: <SiNestjs size={50} />, label: "Nest JS" },
     ],
   },
   {

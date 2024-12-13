@@ -4,6 +4,10 @@ import Image from "next/image";
 import HeadingAndDescription from "./HeadingAndDescription";
 
 const IntroductionSection: React.FC = () => {
+  const header = "Hi, I am Bishwash,";
+  const role = "Fullstack Developer";
+  const description =
+    "As a full-stack developer, I specialize in building robust and scalable web applications. I am passionate about leveraging both front-end and back-end technologies to create seamless and dynamic user experiences. My expertise lies in integrating various systems and optimizing performance to ensure smooth functionality across all devices.";
   return (
     <div className="flex flex-col justify-center items-center gap-8 md:gap-20 p-[31px] md:px-[120px] md:py-[80px] md:flex-row-reverse">
       <Image
@@ -13,11 +17,9 @@ const IntroductionSection: React.FC = () => {
       />
       <div className="flex flex-col">
         <HeadingAndDescription
-          header="Hi, I am Bishwash,"
-          description="As a frontend developer, I specialize in crafting visually appealing
-            and user-friendly web applications. I'm passionate about using
-            modern web technologies to create engaging digital experiences."
-          role="Frontend Developer"
+          header={header}
+          description={description}
+          role={role}
         />
         <a
           className="bg-buttonColor text-white px-[40px] py-[10px] font-bold mt-5   md:mt-8 self-center md:self-start "
